@@ -752,17 +752,18 @@ i:before {
 
 .header_menu_area .navbar.navbar-expand-lg .nav.navbar-nav.navbar-right {
     display: inline-block;
-    max-width: 100px;
+    max-width: 400px;
     width: 100%;
     margin-left: 0
 }
 
 .header_menu_area .navbar.navbar-expand-lg .nav.navbar-nav.navbar-right li {
+    font-size: 20px !important;
     display: inline-block
 }
 
 .header_menu_area .navbar.navbar-expand-lg .nav.navbar-nav.navbar-right li a {
-    color: #999
+    color: black;
 }
 
 .header_menu_area .navbar.navbar-expand-lg .nav.navbar-nav.navbar-right li:hover a,
