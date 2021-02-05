@@ -399,8 +399,10 @@ i:before {
 }
 
 .image_banner_area {
-    background: url(../img/blog/single-blog-3.jpg) no-repeat scroll center center;
-    background-size: cover
+    background: url(../img/cnn-blog.jpg) no-repeat scroll center center;
+    background-size: cover;
+    height:640px;
+    width:auto;
 }
 
 .image_banner_area .single_banner_text {
