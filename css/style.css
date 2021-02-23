@@ -404,6 +404,12 @@ i:before {
     height:640px;
     width:auto;
 }
+.bg{
+  background: url(../img/cnn-blog-1.jpg) no-repeat scroll center center;
+  background-size: cover;
+
+}
+
 
 .image_banner_area .single_banner_text {
     padding-top: 270px;
