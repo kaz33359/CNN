@@ -2260,6 +2260,9 @@ css attributes
 	margin-bottom: 10px !important;
 }
 .marginbottom20 {
+	margin-bottom: 20px !important;
+}
+.marginbottom25 {
 	width: 35%;
 	margin-bottom: 20px !important;
 }
