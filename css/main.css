@@ -877,6 +877,7 @@ nav.main-menu ul.menu li ul.mega-submenu li > a > span,
 .featured-imagebox-team.style2 .cmt-media-link ul li:hover a,
 .cmt-header-style-04 .cmt-rt-contact:before,.cmt-header-style-04 .cmt-rt-contact,.top-contact.cmt-highlight-left:after, .top-contact.cmt-highlight-right:after{
       background-color: #8cbc43;
+      /* border-radius: 35px; */
 }
 
 /**-----  Skincolor-opacity-color----- **/
@@ -1980,7 +1981,7 @@ nav.main-menu ul.menu li ul.mega-submenu li > a > span:before {
   transition: all 0.3s ease;
 }
 .header_cart .button-cart .cart_icon i {font-weight: 500;}
-.header_extra .cmt-btn {padding: 10px 25px 10px 25px;}
+.header_extra .cmt-btn {padding: 10px 25px 10px 25px; border-radius: 35px;}
 .cart_icon:before {
   top: 0;
   content: '';
@@ -2770,6 +2771,7 @@ slider
 .slide .slide_style3 .slide__content--headings .cmt-btn,.slide .slide_style4 .slide__content--headings .cmt-btn,.slide .slide_style5 .slide__content--headings .cmt-btn{
     padding:18px 35px;
     line-height: 1;
+    border-radius: 35px;
     margin-top: 20px;
 }
 .slide .slide_style1 .slide__content--headings h3{padding: 20px 0 40px;}

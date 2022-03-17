@@ -462,7 +462,7 @@
     background-color: transparent;
 }
 
-.cmt-contactform-1 .cmt-btn.cmt-btn-size-md {padding: 14px 33px 14px 33px; }
+.cmt-contactform-1 .cmt-btn.cmt-btn-size-md {padding: 14px 33px 14px 33px; border-radius: 35px; }
 .submit.cmt-btn{margin-top: 20px;}
 .about-btn .cmt-btn {padding: 12px 18px 12px 18px;}
 .title_btn .cmt-btn i{font-size: 16px!important;}
