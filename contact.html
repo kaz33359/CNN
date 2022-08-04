@@ -444,10 +444,21 @@ Tarneit,<br> Victoria 3029, Australia</li>
                         <span class="border-btn__inner"
                           ><i class="fa fa-inbox"></i>Submit</span
                         >
-                        <!-- <span class="btn-wait">Wait</span> -->
                         <span class="border-btn__lines-1"></span>
                         <span class="border-btn__lines-2"></span>
                       </button>
+                      <div
+                  class="form-group text-center col-lg-12 col-md-12 col-sm-12"
+                >
+                  <!-- <button
+                    class="theme-btn btn-style-one"
+                    type="submit"
+                    id="send1"
+                    onclick="contact()"
+                  >
+                    send message
+                  </button> -->
+                </div>
                     </div>
                     <!-- column end -->
                   </form>
@@ -682,8 +693,22 @@ Tarneit,<br> Victoria 3029, Australia</li>
     </div>
     <!--Page End-->
     <!-- Javascript -->
+    <script>function contact() {
+  let name = document.getElementById("first_name").value;
+  let email = document.getElementById("email").value;
+  let mobile = document.getElementById("mobile").value;
+  let message = document.getElementById("message").value;
+
+  let contact = `${name}, ${email}, ${mobile}, ${message}`;
+
+  // alert(contact);
+
+  let url = `https://wa.me/971501453032?text=${contact}`;
+  window.open(url);
+}
+</script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/custom.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-migrate-3.3.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
