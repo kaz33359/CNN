@@ -1,10 +1,10 @@
 function contact() {
-  let name = document.getElementById("first_name").value;
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
   let email = document.getElementById("email").value;
-  let mobile = document.getElementById("mobile").value;
   let message = document.getElementById("message").value;
 
-  let contact = `${name}, ${email}, ${mobile}, ${message}`;
+  let contact = `${name}, ${phone}, ${email} , ${message}`;
 
   // alert(contact);
 

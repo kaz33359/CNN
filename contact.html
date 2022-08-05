@@ -381,15 +381,15 @@ Tarneit,<br> Victoria 3029, Australia</li>
                     </div>
                   </div>
                   <!--section-title end-->
-                  <form class="flex-container padding-top-90" action="mailto:sales@cnnfreights.com" target="_blank" method="post" enctype="text/plain" >
+                  <form class="flex-container padding-top-90" method="post" enctype="text/plain" >
                     <!-- column start -->
-                    <div class="four-columns">
+                    <div class="form-group four-columns">
                       <div class="column-r-margin-10">
                         <input
                           type="text"
-                          name="Name"
+                          name="name"
                           placeholder="Enter your name"
-                          id="Name"
+                          id="name"
                           required
                           class="form-input js-pointer-small"
                         />
@@ -397,13 +397,13 @@ Tarneit,<br> Victoria 3029, Australia</li>
                     </div>
                     <!-- column end -->
                     <!-- column start -->
-                    <div class="four-columns">
+                    <div class="form-group four-columns">
                       <div class="column-l-r-margin-5">
                         <input
-                          type="tel"
-                          name="mobile"
+                          type="text"
+                          name="phone"
                           placeholder="Enter your Mobile Number"
-                          id="mobile"
+                          id="phone"
                           required
                           class="form-input js-pointer-small"
                         />
@@ -411,7 +411,7 @@ Tarneit,<br> Victoria 3029, Australia</li>
                     </div>
                     <!-- column end -->
                     <!-- column start -->
-                    <div class="four-columns">
+                    <div class="form-group four-columns">
                       <div class="column-l-margin-10">
                         <input
                           type="email"
@@ -425,7 +425,7 @@ Tarneit,<br> Victoria 3029, Australia</li>
                     </div>
                     <!-- column end -->
                     <!-- column start -->
-                    <div class="twelve-columns">
+                    <div class="form-group">
                       <textarea
                         name="message"
                         placeholder="Enter your message"
@@ -436,9 +436,8 @@ Tarneit,<br> Victoria 3029, Australia</li>
                     </div>
                     <!-- column end -->
                     <!-- column start -->
-                    <div class="twelve-columns text-center padding-top-90">
-                      <button
-                        id="send" value="submit"
+                    <div class="form-group twelve-columns text-center padding-top-90">
+                      <button value="submit" formaction="mailto:sales@cnnfreights.com"
                         class="submit cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor"
                       >
                         <span class="border-btn__inner"
@@ -447,19 +446,18 @@ Tarneit,<br> Victoria 3029, Australia</li>
                         <span class="border-btn__lines-1"></span>
                         <span class="border-btn__lines-2"></span>
                       </button>
-                      <div
-                  class="form-group text-center col-lg-12 col-md-12 col-sm-12"
-                >
-                  <!-- <button
-                    class="theme-btn btn-style-one"
+
+                      <button
+                      class="submit cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor"
                     type="submit"
-                    id="send1"
-                    onclick="contact()"
-                  >
-                    send message
-                  </button> -->
-                </div>
+                    id="send"
+                    onclick="contact()" target="_blank"
+                  ><span class="border-btn__inner"
+                          ><i class="fa fa-whatsapp"></i> Message Us</span
+                        >
+                  </button>
                     </div>
+
                     <!-- column end -->
                   </form>
                 </div>
@@ -693,22 +691,39 @@ Tarneit,<br> Victoria 3029, Australia</li>
     </div>
     <!--Page End-->
     <!-- Javascript -->
-    <script>function contact() {
-  let name = document.getElementById("first_name").value;
-  let email = document.getElementById("email").value;
+    <!-- <script>
+    function contact() {
+  let name = document.getElementById("name").value;
   let mobile = document.getElementById("mobile").value;
+  let email = document.getElementById("email").value;
   let message = document.getElementById("message").value;
 
   let contact = `${name}, ${email}, ${mobile}, ${message}`;
 
-  // alert(contact);
-
   let url = `https://wa.me/971501453032?text=${contact}`;
   window.open(url);
 }
+</script> -->
+ <script>
+    
+        function contact() {
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+            let contact = `${name}, ${email}, ${mobile}, ${message}`;
+
+            // alert(contact);
+
+            let url = `https://wa.me/919995802155?text=${contact}`;
+            window.open(url);
+
+
+        }
 </script>
+<script src="js/custom.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- <script src="js/custom.js"></script> -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-migrate-3.3.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
