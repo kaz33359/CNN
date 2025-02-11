@@ -73,11 +73,11 @@
   --tg-color-gray-12: #F9F9F9;
   --tg-color-gray-13: #696969;
   --tg-color-dark: #1C1A4A;
-  --tg-color-black-1: #06042E;
-  --tg-color-black-2: #151515;
-  --tg-color-black-3: #00002F;
-  --tg-color-black-4: #2d2d2d;
-  --tg-color-black-5: #000;
+  --tg-color-black-1: #202426;
+  --tg-color-black-2: #202426;
+  --tg-color-black-3: #202426;
+  --tg-color-black-4: #202426;
+  --tg-color-black-5: #202426;
   --tg-border-1: #DCDCEC;
   --tg-border-2: #DCE5E9;
   --tg-border-3: #B2BFC5;
@@ -268,11 +268,11 @@ body.theme-blue {
 }
 
 body.theme-red {
-  --tg-theme-primary: #d70006;
+  --tg-theme-primary: #8cbc4382;
 }
 
 body.theme-red {
-  --tg-theme-secondary: #151515;
+  --tg-theme-secondary: #8cbc43;
 }
 
 body.theme-red {
