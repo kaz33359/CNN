@@ -10132,7 +10132,7 @@ textarea {
 .blog__post-thumb-two .post-tag {
   font-size: 14px;
   font-weight: 700;
-  background: var(--tg-theme-primary);
+  background: var(--tg-theme-secondary);
   color: var(--tg-color-white-default);
   display: block;
   position: absolute;
@@ -10148,7 +10148,7 @@ textarea {
   }
 }
 .blog__post-thumb-two .post-tag:hover {
-  background: var(--tg-theme-secondary);
+  background: var(--tg-theme-primary);
 }
 .blog__post-content {
   padding: 30px 40px 40px;
