@@ -430,17 +430,14 @@ Victoria 3029,<br> Australia</p>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-grp">
-                                            <input type="tel" name="phone" id="mobile" placeholder="Phone">
+                                            <input type="tel" name="phone" id="phone" placeholder="Phone">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-grp">
                                     <textarea name="message" id="message" placeholder="Comments"></textarea>
                                 </div>
-                                <button class="btn" formaction="mailto:sales@cnnfreights.com" value="submit" type="submit">Submit <i class="flaticon-up-right-arrow"></i
-                  ></button>
-                                <!-- <button class="btn" onclick="contact()" target="_blank">Message Us<i class="fa-whatsapp-square"></i
-                  ></button> -->
+                                <button class="btn" type="button" onclick="sendEmail()">Submit <i class="flaticon-up-right-arrow"></i></button>
                             </form>
                             <p class="ajax-response mb-0"></p>
                         </div>
@@ -609,6 +606,19 @@ Victoria 3029,<br> Australia</p>
             window.open(url);
         }
      </script>
+
+    <script>
+    function sendEmail() {
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        let emailBody = `Hi,\n\nI hope this email finds you well.\n\nI am writing to enquire about ${message}\n\nMy name is ${name}\n\nPhone: ${phone}`;
+
+        window.location.href = `mailto:sales@cnnfreights.com?subject=Enquiry&body=${encodeURIComponent(emailBody)}`;
+    }
+    </script>
 
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
