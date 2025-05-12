@@ -1231,6 +1231,7 @@ textarea {
   color: var(--tg-body-color);
   margin: 0;
   margin-bottom: 2px;
+  font-size: 22px;
   line-height: 26px;
 }
 .offCanvas__side-info-two {
@@ -1823,7 +1824,7 @@ textarea {
   display: block;
   line-height: 1.5;
   padding: 10px 60px 10px 25px;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 500;
   color: var(--tg-heading-color);
   text-transform: capitalize;
@@ -1946,7 +1947,7 @@ textarea {
   height: 40px;
   position: relative;
   line-height: 32px;
-  font-size: 16px;
+  font-size: 26px;
   color: var(--tg-body-color);
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
